@@ -2,7 +2,7 @@ var translation = function(sentance) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
 
   vowels.forEach(function(vowel) {
-    if (sentance.includes(vowel)) {
+    if (sentance.indexOf(vowel) === 0) {
       sentance += "way";
     }
   });
