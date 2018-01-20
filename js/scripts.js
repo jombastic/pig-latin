@@ -1,20 +1,25 @@
-var translation = function(sentance) {
+var translation = function(words) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
+  var result = [];
 
-  vowels.forEach(function(vowel) {
-    if (sentance.indexOf(vowel) === 0) {
-      sentance += "way";
-    }
+  words.forEach(function(word) {
+    vowels.forEach(function(vowel) {
+      if (word.indexOf(vowel) === 0) {
+        word += "way";
+      }
+    });
+    result.push(word);
   });
-  return sentance;
-}
+
+  return result.join(" ");
+};
 
 $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    var sentance = $("#sentance").val().toLowerCase();
-    var result = translation(sentance);
+    var words = $("#sentance").val().toLowerCase().split(" ");
+    var result = translation(words);
     $(".translation").text(result);
   });
 });

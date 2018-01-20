@@ -22,6 +22,9 @@ This webpage is my complete reconstruction of the wikipedia homepage as a learni
 * The program adds "way" to multiple letter word beginning with a vowel
   * Example Input: english
   * Example Output: englishway
+* The program adds "way" to the end of every word beginning with a vowel
+  * Example Input: english girls image
+  * Example Output: englishway girls imageway
 ## Setup
 
 * To see the page open the link https://jombastic.github.io/wikipedia-home-rebuild/
