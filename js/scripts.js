@@ -13,7 +13,7 @@ $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    var sentance = $("#sentance").val();
+    var sentance = $("#sentance").val().toLowerCase();
     var result = translation(sentance);
     $(".translation").text(result);
   });
