@@ -1,7 +1,7 @@
 var pigLatinTranslator = function(word) {
   var vowels = ["a","e","i","o","u"];
   for (var i = 0; i < vowels.length; i++) {
-    if (word.includes(vowels[i])) {
+    if (word.indexOf(vowels[i]) === 0) {
       word += "ay";
     }
   }
