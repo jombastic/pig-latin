@@ -12,7 +12,7 @@ $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    var word = $("#sentance").val();
+    var word = $("#sentance").val().toLowerCase();
     var result = pigLatinTranslator(word);
     $("#translation p").text(result);
   });
