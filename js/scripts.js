@@ -1,10 +1,12 @@
 var pigLatinTranslator = function(word) {
+  var firstCharacter = word.substr(0, 1);
   var vowels = ["a","e","i","o","u"];
-  for (var i = 0; i < vowels.length; i++) {
-    if (word.indexOf(vowels[i]) === 0) {
-      word += "ay";
+    if (vowels.indexOf(firstCharacter) > -1) {
+      word += "way";
+    } else {  
+      var restOfWord = word.substr(1);
+      word = restOfWord + firstCharacter.toUpperCase() + "ay";
     }
-  }
   return word;
 };
 
