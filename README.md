@@ -25,6 +25,9 @@ This webpage is my complete reconstruction of the wikipedia homepage as a learni
 * The program moves the first consonant letter to the end of the word, and ads "ay"
   * Example Input: country
   * Example Output: ountryCay
+* The program moves the first consonant letters to the end of the word, and ads "ay"
+  * Example Input: country
+  * Example Output: ountryCay
 * The program adds "way" to the end of every word beginning with a vowel
   * Example Input: english girls image
   * Example Output: englishway girls imageway
