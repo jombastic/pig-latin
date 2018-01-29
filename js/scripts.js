@@ -1,28 +1,29 @@
-var pigLatinTranslator = function(word) {
-  var firstCharacter = word.substr(0, 1);
-
-  var vowels = ["a","e","i","o","u"];
-    if (vowels.indexOf(firstCharacter) > -1) {
-      word += "way";
-    } else {
-      for (var i = 1; i < word.length; i++) {
-        if (vowels.indexOf(word.charAt(i)) > -1) {
-          var consonants = word.substring(1, i);
-          var restOfWord = word.substr(i);
-          word = restOfWord + firstCharacter.toUpperCase() + consonants + "ay";
-          break;
+var pigLatinTranslator = function(words) {
+  var translatedWords = words.map(function(word) {
+    var vowels = ["a","e","i","o","u"];
+      if (vowels.indexOf(word.charAt(0)) > -1) {
+        return word + "way";
+      } else {
+        for (var i = 0; i < word.length; i++) {
+          if (vowels.indexOf(word.charAt(i)) > -1) {
+            var firstCharacter = word.substr(0, 1);
+            var consonants = word.substring(1, i);
+            var restOfWord = word.substr(i);
+            return restOfWord + firstCharacter.toUpperCase() + consonants + "ay";
+            break;
+          }
         }
       }
-    }
-  return word;
+    });
+  return translatedWords.join(" ");
 };
 
 $(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    var word = $("#sentance").val().toLowerCase();
-    var result = pigLatinTranslator(word);
+    var words = $("#sentance").val().toLowerCase().split(" ");
+    var result = pigLatinTranslator(words);
     $("#translation p").text(result);
   });
 });

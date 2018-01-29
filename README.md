@@ -28,9 +28,12 @@ This webpage is my complete reconstruction of the wikipedia homepage as a learni
 * The program moves the first consonant letters to the end of the word, and ads "ay"
   * Example Input: country
   * Example Output: ountryCay
-* The program adds "way" to the end of every word beginning with a vowel
+* The program moves all of the first consonants to the end of the word, and ads "ay"
+  * Example Input: scream
+  * Example Output: eamScray
+* The program handles a whole sentences and translates every word in pig latin
   * Example Input: english girls image
-  * Example Output: englishway girls imageway
+  * Example Output: englishway irlsGay imageway
 ## Setup
 
 * To see the page open the link https://jombastic.github.io/wikipedia-home-rebuild/
