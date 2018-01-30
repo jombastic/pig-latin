@@ -1,12 +1,12 @@
-# Wikipedia Homepage Rebuild
+# Pig Latin
 
-#### Basic HTML, CSS and Boostrap Exercise from [learnhowtoprogram.com](https://www.learnhowtoprogram.com), 05.03.20017
+#### Basic HTML, CSS and JavaScript Exercise from [learnhowtoprogram.com](https://www.learnhowtoprogram.com), 30.01.2018
 
 #### By Slavcho Mitrov
 
 ## Description
 
-This webpage is my complete reconstruction of the wikipedia homepage as a learning exercise. With using my personal knowledge gained previously with the help of the [learnhowtoprogram.com](https://www.learnhowtoprogram.com) website I was able to make it look close enough to the original. Cheers!
+This webpage translates sentences into **pig latin**. It uses a function with if/else branching and looping through the array of words using map, as well as traditional for loops and returns the translated sentence. The branch named 'proba' uses regular expressions to match a pattern of vowels.
 
 ## Specifications
 
@@ -34,14 +34,22 @@ This webpage is my complete reconstruction of the wikipedia homepage as a learni
 * The program handles a whole sentences and translates every word in pig latin
   * Example Input: english girls image
   * Example Output: englishway irlsGay imageway
+
+## Technologies used
+
+* HTML
+* CSS
+* JavaScript
+* jQuery
+
 ## Setup
 
-* To see the page open the link https://jombastic.github.io/wikipedia-home-rebuild/
+* To see the page open the link https://jombastic.github.io/pig-latin
 
 * To download the page click clone or download on github
 
 ### License
 
-Copyright (c) 2017 **Slavcho Mitrov**
+Copyright (c) 2018 **Slavcho Mitrov**
 
 This software is licensed under the MIT license.
